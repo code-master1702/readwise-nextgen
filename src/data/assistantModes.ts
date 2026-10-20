@@ -1,0 +1,108 @@
+import { AssistantModeInfo } from '../types';
+
+export const ASSISTANT_MODES: AssistantModeInfo[] = [
+  {
+    id: 'book_expert',
+    name: 'Book Expert',
+    tagline: 'Deep comprehension of your uploaded library',
+    description: 'Answers detailed questions about your books, cites exact pages, explains themes, and maps connections across chapters.',
+    iconName: 'BookOpen',
+    promptStarters: [
+      'What are the 3 central arguments of this book?',
+      'Summarize page 1 and highlight the primary lesson.',
+      'How does the author define virtue in this context?',
+      'What practical exercises does the author recommend?',
+    ],
+  },
+  {
+    id: 'explain_simply',
+    name: 'Explain Simply',
+    tagline: 'Feynman technique for difficult concepts',
+    description: 'Breaks down complex philosophical, scientific, or financial terminology into crystal-clear analogies and beginner-friendly language.',
+    iconName: 'Sparkles',
+    promptStarters: [
+      'Explain cognitive heuristics like I am 10 years old.',
+      'Break down Seneca’s view on time into a simple analogy.',
+      'What does compounding interest look like in real everyday life?',
+      'Simplify this dense paragraph into plain English.',
+    ],
+  },
+  {
+    id: 'research_assistant',
+    name: 'Research Assistant',
+    tagline: 'Fact verification & scholarly synthesis',
+    description: 'Helps investigate historical contexts, cross-references ideas, and explicitly distinguishes verified facts from uncertain claims.',
+    iconName: 'Compass',
+    promptStarters: [
+      'What historical events influenced Marcus Aurelius when writing Meditations?',
+      'Compare Kahneman’s dual-system model with modern neuroscience.',
+      'What are the counterarguments to the author’s primary thesis?',
+      'What is verifiable fact versus personal opinion in this passage?',
+    ],
+  },
+  {
+    id: 'learning_coach',
+    name: 'Learning Coach',
+    tagline: 'Actionable retention & customized quizzes',
+    description: 'Designs customized study roadmaps, generates comprehension quizzes, and turns passive reading into daily deliberate practice.',
+    iconName: 'GraduationCap',
+    promptStarters: [
+      'Quiz me on the core concepts from today\'s reading.',
+      'Create a 7-day implementation roadmap for this book.',
+      'Give me a real-world scenario to test my understanding.',
+      'How can I apply this lesson in my professional life tomorrow?',
+    ],
+  },
+  {
+    id: 'writing_assistant',
+    name: 'Writing Assistant',
+    tagline: 'Editorial partner & original composition',
+    description: 'Drafts outlines, refines prose, suggests evocative metaphors, and synthesizes your book highlights into essays or articles.',
+    iconName: 'PenTool',
+    promptStarters: [
+      'Turn my saved highlights from Meditations into an essay outline.',
+      'Help me draft a book review synthesizing the author’s wisdom.',
+      'Improve the clarity, punch, and rhythm of this paragraph.',
+      'Generate 5 compelling titles for an article on mental clarity.',
+    ],
+  },
+  {
+    id: 'personal_librarian',
+    name: 'Personal Librarian',
+    tagline: 'Curated recommendations by genre & goal',
+    description: 'Recommends books matched to your intellectual ambitions, compares works, and builds progressive reading tracks from beginner to master.',
+    iconName: 'Library',
+    promptStarters: [
+      'Recommend beginner-friendly psychology books that help me understand human behavior.',
+      'Compare "Atomic Habits" with "The 7 Habits of Highly Effective People".',
+      'What should I read next if I loved Marcus Aurelius?',
+      'Build a 3-book reading path for mastering financial literacy.',
+    ],
+  },
+  {
+    id: 'vocabulary_tutor',
+    name: 'Vocabulary Tutor',
+    tagline: 'Active recall & contextual mastery',
+    description: 'Teaches sophisticated vocabulary from your reading, explores etymologies, creates mnemonic aids, and tests retention with spaced repetition.',
+    iconName: 'Languages',
+    promptStarters: [
+      'Quiz me on my saved vocabulary words.',
+      'Explain the etymology and nuances of "heuristics".',
+      'Give me 3 everyday sentences using the word "stoic".',
+      'What are subtle distinctions between "equanimity" and "tranquility"?',
+    ],
+  },
+  {
+    id: 'critical_thinking_coach',
+    name: 'Critical Thinking Coach',
+    tagline: 'Socratic dialogue & assumption stress-testing',
+    description: 'Challenges underlying assumptions, identifies logical fallacies, presents steel-man counterpoints, and tests cognitive rigor.',
+    iconName: 'BrainCircuit',
+    promptStarters: [
+      'What hidden assumptions is the author making in this chapter?',
+      'Steel-man the strongest argument against this chapter\'s claim.',
+      'Where might the author\'s reasoning fall into confirmation bias?',
+      'What evidence would disprove the author’s primary hypothesis?',
+    ],
+  },
+];

@@ -1,0 +1,6 @@
+{
+  "name": "BookMind AI",
+  "description": "Read deeply. Understand everything. Grow through knowledge. AI-powered mobile reading, natural voice narration, dedicated assistant, and book discovery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

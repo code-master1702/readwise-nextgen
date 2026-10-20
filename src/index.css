@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* High-contrast, crystal clear input fields across all browsers and themes */
+input,
+textarea,
+select {
+  color: #0f172a !important; /* deep slate-900 */
+  font-weight: 700 !important; /* thick and clear */
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #475569 !important; /* high-contrast slate-600 */
+  font-weight: 600 !important;
+  opacity: 1 !important;
+}
+
+/* Dark mode input visibility */
+.dark input,
+.dark textarea,
+.dark select {
+  color: #f8fafc !important; /* crisp slate-50 */
+  font-weight: 700 !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #94a3b8 !important; /* slate-400 */
+  font-weight: 600 !important;
+  opacity: 1 !important;
+}
+
+/* Clear selection styling */
+::selection {
+  background-color: #fde68a;
+  color: #78350f;
+}
